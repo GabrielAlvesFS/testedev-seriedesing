@@ -13,10 +13,145 @@ ul, li, a{
   text-decoration: none;
 }
 
+body, button, input {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Var's */
 :root{
   --light: #FFFFFF;
   --grey: #7f7f7f;
+  --light-grey: #d3d3d3;
   --purple: #8158C5;
   --orange: #FFA200;
+}
+
+/* Header */
+header {
+  width: 100%;
+}
+
+header .header {
+  max-width: 1170px;
+  height: 114px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .search-container {
+  position: relative;
+}
+
+#search-input {
+  width: 198px;
+  height: 45px;
+  padding: 0 40px 0 10px;
+  border: 1px solid var(--light-grey);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.search-container a {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 12px);
+  color: var(--grey);
+}
+
+.header #petstore-logo {
+  width: 271px;
+  height: 68px;
+}
+
+.header .customer-header-container {
+  width: 198px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.8rem;
+  padding-right: 10px;
+}
+
+.customer-header-container a {
+  color: var(--grey);
+}
+
+.customer-header-container:last-child {
+  position: relative;
+}
+
+.customer-header-container:last-child .cart-quantity {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  padding: 4px 0 0 4px;
+  margin-left: -10px;
+  font-size: 10px;
+  color: var(--light);
+  background-color: var(--orange);
+  border-radius: 50%;
+}
+
+/* Nav */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: var(--purple);
+}
+
+.nav-container {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-container ul {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-container ul .list-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--light);
+  cursor: pointer;
+}
+
+.nav-container ul .list-item a{
+  color: var(--light);
+  padding: 7px;
+}
+
+.nav-container ul .list-item:hover a {
+  color: var(--orange);
+  transition: ease-in-out 0.3s;
+  border-bottom: 1px solid var(--orange);
+}
+
+.nav-container .menu-hamburguer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.nav-container .menu-hamburguer div{
+  border-bottom: 4px solid var(--orange);
+  border-radius: 12px;
+  width: 35px;
 }
