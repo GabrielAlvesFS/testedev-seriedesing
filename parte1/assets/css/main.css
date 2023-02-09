@@ -493,3 +493,118 @@ footer {
   cursor: pointer;
   border: none;
 }
+
+/* site footer */
+.site-footer-container {
+  margin: 0 auto;
+  max-width: 1170px;
+  height: fit-content;
+}
+
+.site-informations {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 45px 0;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+/* company div */
+.site-informations .company {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.company img {
+  width: 280px;
+}
+
+.company .social-media-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.company .social-media-links a {
+  color: var(--grey);
+}
+
+.company p, .company address {
+  color: var(--grey);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* about us && contact*/
+.site-informations .about-us, .site-informations .contact {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-informations .about-us ul, .site-informations .contact ul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.site-informations .about-us p, .site-informations .contact p{
+  color: var(--purple);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.site-informations .about-us a, .site-informations .contact a{
+  color: var(--grey);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* payments */
+.site-informations .payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-informations .payment-methods p{
+  color: var(--purple);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.payment-methods .payment-cards {
+  max-width: 228px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.payment-methods .payment-cards img {
+  width: 43px;
+  height: 26px;
+}
+
+.site-footer-container .company-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 40px;
+}
+
+.site-footer-container .company-copyright p {
+  font-size: 10px;
+  color: var(--grey);
+}
+
+.site-footer-container .company-copyright img {
+  width: 56px;
+  height: 23px;
+}
