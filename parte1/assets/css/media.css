@@ -4,6 +4,11 @@
     padding: 0 20px;
   }
 
+  /* Animals Section */
+  .animals-img-container img {
+    width: 85%;
+    object-fit: cover;
+  }
 }
 
 /* Small Screens 521px - 1768px */
@@ -57,9 +62,9 @@
   }
 
   .categories-section::-webkit-scrollbar-thumb:horizontal{
-      background: #8158C5;
-      border-radius: 10px;
-  }
+    background: #8158C5;
+    border-radius: 10px;
+}
 }
 
 /* Small Screens 521px */
