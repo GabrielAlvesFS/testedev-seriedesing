@@ -533,6 +533,11 @@ footer {
   color: var(--grey);
 }
 
+.company .social-media-links a svg {
+  width: 35px;
+  height: 35px;
+}
+
 .company p, .company address {
   color: var(--grey);
   font-size: 12px;
@@ -552,6 +557,11 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.site-informations .about-us ul li a:hover, .site-informations .contact ul li a:hover{
+  border-bottom: 1px solid var(--purple);
+  color: var(--purple);
 }
 
 .site-informations .about-us p, .site-informations .contact p{
