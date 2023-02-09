@@ -16,6 +16,13 @@
 	<!-- Feather Icons -->
 	<script src="https://unpkg.com/feather-icons"></script>
 
+	<!-- Swiper lib -->
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+
 </head>
 <body>
 	<header>
@@ -78,15 +85,28 @@
 		</nav>
 	</header>
 
-	<section class="carousel-section">
-		<i id="prev-btn" data-feather="arrow-left-circle"></i>
-		<div class="carousel">
+	<section class="swiper">
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide">
 				<img src="./assets/images/banner.jpg" alt="Imagem de um cão e um gato" draggable="false">
+			</div>
+			<div class="swiper-slide">
 				<img src="./assets/images/banner.jpg" alt="Imagem de um cão e um gato" draggable="false">
+			</div>
+			<div class="swiper-slide">
 				<img src="./assets/images/banner.jpg" alt="Imagem de um cão e um gato" draggable="false">
+			</div>
+			<div class="swiper-slide">
 				<img src="./assets/images/banner.jpg" alt="Imagem de um cão e um gato" draggable="false">
+			</div>
 		</div>
-		<i id="next-btn" data-feather="arrow-right-circle"></i>
+		<!-- pagination -->
+		<div class="swiper-pagination"></div>
+
+		<!-- navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
 	</section>
 
 	<section class="categories-section">
@@ -371,6 +391,7 @@
 		
 	</footer>
 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script>
 		feather.replace()
 	</script>
