@@ -233,3 +233,37 @@ header nav {
   object-fit: cover;
   width: 100%;
 }
+
+/* Categories Section */
+.categories-section {
+  width: 100%;
+  height: 140px;
+  background-color: var(--orange);
+}
+
+.categories-section .categories-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 1170px;
+  height: 140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.categories-container .img-container {
+  max-width: 378px;
+  height: auto;
+}
+
+.img-container a:hover img {
+  border: 2px solid var(--purple);
+  box-shadow: 1px 5px 10px #8158C5;
+  transition: ease-in-out 0.3s;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
