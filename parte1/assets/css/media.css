@@ -1,0 +1,36 @@
+/* Small Screens 769px - 1024px */
+@media screen  and (max-width: 1024px) {
+  header .header {
+    padding: 0 20px;
+  }
+
+}
+
+/* Small Screens 521px - 1768px */
+@media screen  and (max-width: 768px) {
+  header .header {
+    justify-content: space-around;
+  }
+
+  .search-container, .categories-list {
+    display: none;
+  }
+
+  .nav-container {
+    justify-content: end;
+    padding: 0 20px;
+  }
+
+  .all-categories-list {
+    width: 100%;
+    top: 40px;
+    right: 0;
+    border: none;
+  }
+}
+
+/* Small Screens 521px */
+@media screen  and (max-width: 521px) {
+
+
+}
