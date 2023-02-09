@@ -197,41 +197,30 @@ header nav {
 }
 
 /* Carousel Section */
-.carousel-section {
-  position: relative;
+.swiper {
+  height: 384px;
 }
 
-.carousel-section .carousel {
-  font-size: 0px;
-  cursor: pointer;
-  overflow: hidden;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-}
-
-.carousel-section svg {
-  top: 50%;
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  color: var(--grey);
-  cursor: pointer;
-  transform: translateY(-50%);
-}
-
-.carousel-section svg:first-child {
-  left: 15%;
-  display: none;
-}
-
-.carousel-section svg:last-child {
-  right: 15%;
-}
-
-.carousel img {
+.swiper-slide img {
   height: 384px;
   object-fit: cover;
   width: 100%;
+}
+
+.swiper-button-next {
+  margin-right: 15% !important;
+}
+
+.swiper-button-prev {
+  margin-left: 15% !important;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: black !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--light) !important; 
 }
 
 /* Categories Section */
