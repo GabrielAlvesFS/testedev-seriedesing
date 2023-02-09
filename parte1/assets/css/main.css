@@ -371,3 +371,24 @@ header nav {
   color: var(--grey);
   text-align: center;
 }
+
+/* Animals Section */
+.animals-section {
+  width: 100%;
+  height: fit-content;
+  padding-top: 100px;
+}
+
+.animals-section .animals-img-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.animals-img-container img {
+  width: 50% - 18px;
+  object-fit: cover;
+}
