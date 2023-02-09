@@ -392,3 +392,104 @@ header nav {
   width: 50% - 18px;
   object-fit: cover;
 }
+
+/* Footer */
+footer {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.newsletter-container {
+  background-color: var(--purple);
+  height: fit-content;
+}
+
+.newsletter-container .info-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1170px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--orange);
+  gap: 8px;
+}
+
+.newsletter-container .info-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.newsletter-container .info-container p {
+  color: var(--light);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.newsletter-container .form-container {
+  max-width: 1170px;
+  margin: 50px auto 0 auto;
+}
+
+.form-container h2 {
+  color: var(--light);
+  text-align: center;
+}
+
+.form-container p {
+  color: var(--light);
+  text-align: center;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.form-container form > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.form-container form #name, .form-container form #email {
+  background-color: var(--purple);
+  padding: 8px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--light);
+  color: var(--light);
+}
+
+.form-container form #name::placeholder, .form-container form #email::placeholder {
+  color: var(--light);
+}
+
+.form-container form #name {
+  width: 180px;
+}
+
+.form-container form #email {
+  width: 280px;
+}
+
+.form-container form button {
+  width: 81px;
+  height: 35px;
+  background-color: var(--orange);
+  color: var(--light);
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
