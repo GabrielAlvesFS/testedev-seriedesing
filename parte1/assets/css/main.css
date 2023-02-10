@@ -202,7 +202,8 @@ header nav {
 }
 
 .swiper-slide img {
-  height: 384px;
+  height: 100%;
+  position: fixed;
   object-fit: cover;
   width: 100%;
 }
