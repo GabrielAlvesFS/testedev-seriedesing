@@ -43,6 +43,10 @@
     padding: 0 20px;
   }
 
+  .swiper {
+    height: 280px;
+  }
+
   .all-categories-list {
     width: 100%;
     top: 40px;
