@@ -26,6 +26,13 @@
 		<script>
 			console.log('resposta 1');
 			//insira a resposta aqui.
+			let dividedBy7 = []
+
+			for (let i = 0; i <= 100; i++) {
+				if (i%7===0) dividedBy7.push(i)
+			}
+
+			console.log(dividedBy7)
 		</script>
 
 		<div class="border"></div>
@@ -35,6 +42,14 @@
 		<script>
 			console.log('resposta 2');
 			//insira a resposta aqui.
+			const repeatString = (text, num) => {
+				text = text.toString()
+				num = Number(num)
+
+				return Array(num).fill(text).join(',');
+			}
+
+			console.log(repeatString('Gabsss', 14))
 		</script>
 
 		<div class="border"></div>
@@ -50,6 +65,13 @@
 		<script>
 			console.log('resposta 3');
 			//insira a resposta aqui.
+
+			const parent = document.querySelector('.pai')
+			const child = document.querySelector('.filho')
+
+			parent.appendChild(child)
+
+			console.log(parent)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 4 ---->
@@ -61,7 +83,7 @@
 			<li>inserir uma classe 'last' no último parágrafo</li>
 		</ol>
 		<!--- RESPOSTA 4 ---->
-		<div style="display: none;">
+		<div class="four" style="display: none;">
 			<p>texto</p>
 			<p>texto</p>
 			<p>texto</p>
@@ -69,6 +91,12 @@
 		<script>
 			console.log('resposta 4');
 			//insira a resposta aqui.
+
+			const parentDiv = document.querySelector('.four')
+			parentDiv.querySelector('p:nth-child(2)').innerHTML = 'Texto alterado'
+			parentDiv.querySelector('p:last-child').classList.add('last')
+
+			console.log(parentDiv)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 5 ---->
@@ -78,6 +106,15 @@
 		<script>
 			console.log('resposta 5');
 			//insira a resposta aqui.
+			const isOfAge = (age) => {
+				age = Number(age)
+				const result = age > 18 ? "maior de idade" : "menor de idade"
+				console.log(result)
+				return result
+			}
+
+			isOfAge(15)
+			isOfAge(22)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 6 ---->
@@ -97,6 +134,18 @@
 				pesoObj: '150g'
 			}
 			//insira a resposta aqui.
+			const changeObj = (newName, newWeight) => {
+				obj.nomeObj = newName
+				obj.pesoObj = newWeight
+
+				let arr = []
+				arr.push(obj)
+				console.log(arr)
+
+				return arr
+			}
+
+			changeObj('Teclado', '500g')
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 7 ---->
@@ -111,6 +160,17 @@
 		<script>
 			console.log('resposta 7');
 			//insira a resposta aqui.
+			const text = 'Eu quero trabalhar na Seri.e Design'
+
+			const backward = text.split('').reverse().join('').split(' ').join('!')
+			const lastWord = text.split(" ").pop()
+			const strLength = text.length
+
+			console.log(backward)
+			console.log(lastWord)
+			console.log(strLength)
+			console.log(typeof strLength)
+
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 8 ---->
@@ -121,14 +181,27 @@
 		<p>faça uma função para adicionar o atributo 'data-id' em cada uma das divs, com o valor sendo a posição que se encontra a div na lista. Ex.: &lt;div data-id="2"&gt;</p>.
 		<!--- RESPOSTA 8 ---->
 
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
+		<div class="eighth"></div>
+		<div class="eighth"></div>
+		<div class="eighth"></div>
+		<div class="eighth"></div>
+		<div class="eighth"></div>
 		<script>
 			console.log('resposta 8');
 			//insira a resposta aqui.
+			const allDivs = document.querySelectorAll('.eighth')
+
+			const addDataIdAttrInDivs = (divs) => {
+				let count = 1
+				divs.forEach( (div) => {
+					div.setAttribute('data-id', count)
+					count++
+					console.log(div)
+				})
+			}
+
+			addDataIdAttrInDivs(allDivs)
+
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 9 ---->
@@ -154,6 +227,19 @@
 		<script>
 			console.log('resposta 9');
 			//insira a resposta aqui.
+			const container = document.querySelector('.content')
+			const subContainer = document.querySelector('.subcontainer')
+
+			const category = document.querySelector('.content ul li')
+			
+			category.addEventListener( 'click', () => {
+				subContainer.firstElementChild.style.display = 'block'
+				container.classList.add('active')
+				subContainer.classList.add('active')
+				console.log('resposta 9');
+				console.log(container)
+			})
+
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 10 ---->
@@ -187,7 +273,7 @@
 		</ol>
 		<!--- RESPOSTA 10 ---->
 		<div>
-			<p style="color: #F00;">RESPOSTA: </p>
+			<p style="color: #F00;">RESPOSTA: 4 </p>
 		</div>
 	</div>
 </body>
